@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Navbar */
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+  }
+  
+  .navbar .logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon {
+    height: 25px;
+  }
+  
+  /* Hero */
+  .hero {
+  text-align: center;
+  padding: 40px;
+  background: #064e3b;   /* Dark Green */
+  color: white;
+}
+  
+  
+  
+  .hero-logo {
+    height: 100px;
+  }
+  
+  .hero-title {
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  
+  .hero-slogan {
+    margin-top: 5px;
+  }
+  
+  /* Main Layout */
+  .main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+  }
+  
+  .card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  .card-img {
+    height: 60px;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 3px 7px;
+    background: #eee;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .heart {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+  }
+  
+  .card-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card-buttons button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #ff4e50;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .card-buttons button:hover {
+    background: #e73c3e;
+  }
+  
+  /* History */
+  .history {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .history ul {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  .history li {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .main-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emergency Hotline Directory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <h1>Hotline Directory</h1>
+    </div>
+    <div class="nav-right">
+      <img src="images/heart.png" alt="heart" class="icon" />
+      <span id="heartCount">0</span>
+      <img src="images/coin.png" alt="coin" class="icon" />
+      <span id="coinCount">100</span>
+      <span>Copies: <span id="copyCount">0</span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/logo-dark.png" alt="Hero Logo" class="hero-logo" />
+    <h2 class="hero-title">Emergency Services</h2>
+    <p class="hero-slogan">“Government Emergency service at Your Fingertip-A project by government people's Republic of Bangladesh”</p>
+  </section>
+
+  <!-- Main Section -->
+  <main class="main-container">
+    <!-- Cards -->
+    <section class="cards">
+      <div class="card">
+        <img src="images/ambulance.png" alt="ambulance" class="card-img" />
+        <h3>Ambulance</h3>
+        <p>Emergency Medical</p>
+        <p class="number">1994-9558</p>
+        <span class="badge">Health</span>
+        <span class="heart" onclick="addHeart()">💗</span>
+        <div class="card-buttons">
+          <button onclick="copyNumber('1994-9558')">📋 Copy</button>
+          <button onclick="makeCall('Ambulance','1994-9558')">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/fire-service.png" alt="fire" class="card-img" />
+        <h3>Fire Service</h3>
+        <p>Fire Emergency</p>
+        <p class="number">102</p>
+        <span class="badge">Fire</span>
+        <span class="heart" onclick="addHeart()">💗</span>
+        <div class="card-buttons">
+          <button onclick="copyNumber('102')">📋 Copy</button>
+          <button onclick="makeCall('Fire Service','102')">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/police.png" alt="police" class="card-img" />
+        <h3>Police</h3>
+        <p>Law & Order</p>
+        <p class="number">100</p>
+        <span class="badge">Security</span>
+        <span class="heart" onclick="addHeart()">💗</span>
+        <div class="card-buttons">
+          <button onclick="copyNumber('100')">📋 Copy</button>
+          <button onclick="makeCall('Police','100')">📞 Call</button>
+        </div>
+      </div>
+      
+        <!-- Jatiyo Joruri Sheba -->
+        <div class="card">
+          <img src="images/logo.png" alt="emergency" class="card-img" />
+          <h3>জাতীয় জরুরি সেবা</h3>
+          <p>National Emergency</p>
+          <p class="number">999</p>
+          <span class="badge">Emergency</span>
+          <span class="heart" onclick="addHeart()">💗</span>
+          <div class="card-buttons">
+            <button onclick="copyNumber('999')">📋 Copy</button>
+            <button onclick="makeCall('জাতীয় জরুরি সেবা','999')">📞 Call</button>
+          </div>
+        </div>
+      
+        <!-- Railway Service -->
+        <div class="card">
+          <img src="images/Bangladesh-Railway.png" alt="railway" class="card-img" />
+          <h3>Railway Service</h3>
+          <p>Bangladesh Railway</p>
+          <p class="number">131</p>
+          <span class="badge">Transport</span>
+          <span class="heart" onclick="addHeart()">💗</span>
+          <div class="card-buttons">
+            <button onclick="copyNumber('131')">📋 Copy</button>
+            <button onclick="makeCall('Railway Service','131')">📞 Call</button>
+          </div>
+        </div>
+      
+        <!-- Govt Information -->
+        <div class="card">
+          <img src="images/brac.png" alt="govt" class="card-img" />
+          <h3>Govt Info</h3>
+          <p>Public Service</p>
+          <p class="number">333</p>
+          <span class="badge">Government</span>
+          <span class="heart" onclick="addHeart()">💗</span>
+          <div class="card-buttons">
+            <button onclick="copyNumber('333')">📋 Copy</button>
+            <button onclick="makeCall('Govt Info','333')">📞 Call</button>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- add more cards as needed -->
+    </section>
+
+    <!-- History -->
+    <section class="history">
+      <div class="history-header">
+        <h3>📖 Call History</h3>
+        <button onclick="clearHistory()">🗑️ Clear History</button>
+      </div>
+      <ul id="historyList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
